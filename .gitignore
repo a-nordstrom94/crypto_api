@@ -1,0 +1,7 @@
+# Python cache and compiled files
+__pycache__/
+*.pyc
+
+# Data outputs
+Data/Processed/
+Logs/
