@@ -4,5 +4,5 @@ __pycache__/
 
 # Data outputs
 Data/Processed/
-/Data/Raw
+Data/Raw
 Logs/
