@@ -3,7 +3,7 @@ TLDR: Crypto data analysis project - fetches cryptocurrency data via API, transf
 
 OVERVIEW 
 
-Crypto API Data Analysis is a python project that fetches cryptocurrency market data from  <a href="https://www.coingecko.com/en/api">CoinGeckop API</a>  and performs data transformation and analysis using Pandas. The project is fully Dockerized for easy setup and includes a logging system to track operations and provide insights into the project flow, and for potential errors.
+Crypto API Data Analysis is a python project that fetches cryptocurrency market data from  <a href="https://www.coingecko.com/en/api">CoinGecko API</a>  and performs data transformation and analysis using Pandas. The project is fully Dockerized for easy setup and includes a logging system to track operations and provide insights into the project flow, and for potential errors.
 
 The goal is to provide a simple, reproducible pipeline to:
 * Fetch cryptocurrency data
