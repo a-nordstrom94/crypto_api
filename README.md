@@ -32,6 +32,7 @@ Crypto_project/
 ```
 
 GETTING STARTED
+
 Prerequisites
 * Docker installed (recommended)
 OR
