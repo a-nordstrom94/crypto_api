@@ -41,8 +41,10 @@ OR
 
 Running with Docker (recommended)
 1. docker build -t crypto_project -f Docker/Dockerfile .
-2. Linux / Mac: docker run --rm -v $(pwd)/Data:/app/Data -v $(pwd)/Logs:/app/Logs crypto_api
-   Windows: docker run --rm -v %cd%\Data:/app/Data -v %cd%\Logs:/app/Logs crypto_api
+2. Linux / Mac:  
+`docker run --rm -v $(pwd)/Data:/app/Data -v $(pwd)/Logs:/app/Logs crypto_api`  
+Windows (CMD):  
+`docker run --rm -v %cd%\Data:/app/Data -v %cd%\Logs:/app/Logs crypto_api`
 * CSV data will be saved to Data/Processed folder
 * Logs will appear in Logs/ and some output in the console
 
