@@ -14,8 +14,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code and data from the repository root (build context)
 COPY Src/ ./Src/
-COPY Data/ ./Data/
-COPY Logs/ ./Logs/
 
 # Set environment variables for Python unbuffered output
 ENV PYTHONUNBUFFERED=1
