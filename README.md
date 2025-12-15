@@ -6,11 +6,12 @@ OVERVIEW
 Crypto API Data Analysis is a python project that fetches cryptocurrency market data from  <a href="https://www.coingecko.com/en/api">CoinGecko API</a>  and performs data transformation and analysis using Pandas. The project is fully Dockerized for easy setup and includes a logging system to track operations and provide insights into the project flow, and for potential errors.
 
 The goal is to provide a simple, reproducible pipeline to:
-* Fetch cryptocurrency data
-* Analyze top performers, losers, and volatility
-* Compute market cap statistics
+* Fetch data from external API
+* Processing data with pandas
+* Reading JSON
 * Save results to CSV files
 * Log process steps for transparency and debugging
+* Dockerized for easy execution
 
 PROJECT STRUCTURE
 ```
@@ -39,8 +40,9 @@ OR
 * Python 3.11+ and pip (Not recommended)
 
 Running with Docker (recommended)
-1. docker build -t crypto_project -f Docker/dockerfile .
-2. docker run --rm -v $(pwd)/Data:/app/Data -v $(pwd)/Logs:/app/Logs crypto_project
+1. docker build -t crypto_project -f Docker/Dockerfile .
+2. Linux / Mac: docker run --rm -v $(pwd)/Data:/app/Data -v $(pwd)/Logs:/app/Logs crypto_api
+   Windows: docker run --rm -v %cd%\Data:/app/Data -v %cd%\Logs:/app/Logs crypto_api
 * CSV data will be saved to Data/Processed folder
 * Logs will appear in Logs/ and some output in the console
 
